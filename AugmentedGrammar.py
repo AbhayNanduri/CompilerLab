@@ -2,7 +2,7 @@ def augment_grammar(grammar):
     augmented_grammar = {}
     start_symbol = 'S\''
     original_start_symbol = list(grammar.keys())[0]
-    augmented_grammar[start_symbol] = [original_start_symbol + '$']
+    augmented_grammar[start_symbol] = ['.'+ original_start_symbol]
     for non_terminal, productions in grammar.items():
         augmented_productions = ['.' + production for production in productions]
         augmented_grammar[non_terminal] = augmented_productions
