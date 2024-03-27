@@ -1,7 +1,3 @@
-from collections import defaultdict
-
-# Example augmented grammar
-# Replace this with your augmented grammar
 grammar = {
     'S\'': [('S',)],
     'S': [('E',)],
