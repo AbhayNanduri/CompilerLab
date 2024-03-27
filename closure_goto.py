@@ -16,7 +16,6 @@ def closure(items, grammar):
     while True:
         new_items = set()
         for item in closure_set:
-            production = item[0]
             dot_index = item[1].index('.')
             if dot_index < len(item[1]) - 1:
                 symbol_after_dot = item[1][dot_index + 1]
